@@ -70,6 +70,7 @@ public class Tyranny extends Government implements Serializable
     private void writeObject(ObjectOutputStream aStream) throws IOException
     {
         aStream.defaultWriteObject();
+		
         //manually serialize superclass
         aStream.writeObject(getWinningParty());
     }
